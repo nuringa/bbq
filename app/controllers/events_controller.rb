@@ -35,11 +35,16 @@ class EventsController < ApplicationController
 
   def destroy
     @event.destroy
-    redirect_to @event, notice: 'Event was successfully destroyed'
+    redirect_to events_url, notice: 'Event was successfully destroyed.'
   end
 
   private
-    def event_params
-      params.require(:event).permit(:title, :address, :datetime, :description)
-    end
+
+  def set_event
+    @event = Event.find(params[:id])
+  end
+
+  def event_params
+    params.require(:event).permit(:title, :address, :datetime, :description)
+  end
 end
