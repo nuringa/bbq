@@ -1,11 +1,9 @@
 ru:
-  # Перевод паршала ошибок
   errors:
     count:
       one: "В вашей форме %{count} ошибка"
       few: "В вашей форме %{count} ошибки"
       many: "В вашей форме %{count} ошибок"
-  # Перевод моделей
   activerecord:
     models:
       user: 'Пользователь'
@@ -34,5 +32,17 @@ ru:
   users:
     edit_title: Редактирование профиля пользователя
   events:
+    index:
+      title: События
+      create_event: Создать событие
+    new:
+      create: 'Создание События'
     edit: 'Редактирование События'
-    create: 'Создание События'
+    show:
+      edit: Изменить
+      delete: Удалить
+      confirm_delete: Вы уверены, что хотите удалить событие?
+    form:
+      save_event: Сохранить
+  links:
+    back: Назад
