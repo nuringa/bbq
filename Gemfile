@@ -4,6 +4,9 @@ ruby '2.6.3'
 gem 'rails', '~> 5.2.3'
 gem 'twitter-bootstrap-rails'
 gem 'devise'
+gem 'devise-i18n'
+gem 'rails-i18n'
+
 
 gem 'puma', '~> 3.11'
 

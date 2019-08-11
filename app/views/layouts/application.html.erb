@@ -20,7 +20,7 @@
   <div class="navbar navbar-default navbar-static-top">
     <div class="container">
       <%# Для вывода названия приложения используем хелпер I18n.t %>
-      <%= link_to 'BBQ!', root_path, class: 'navbar-brand' %>
+      <%= link_to t('app.name'), root_path, class: 'navbar-brand' %>
 
       <div class="navbar-collapse collapse navbar-responsive-collapse">
         <ul class="nav navbar-nav">
@@ -46,7 +46,9 @@
     </div><!--/row-->
 
     <footer>
-      <p>&copy; Company 2016</p>
+      <div class="row buffer-top">
+        <p>&copy; <%= t 'app.company' %> 2019</p>
+      </div>
     </footer>
   </div> <!-- /container -->
 </body>

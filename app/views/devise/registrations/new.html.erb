@@ -18,7 +18,7 @@
           <div class="form-group">
             <%= f.label :password %>
             <% if @minimum_password_length %>
-              <em>(<%= @minimum_password_length %> characters minimum)</em>
+              <em><%= t('.password_length', password_length: @minimum_password_length) %> </em>
             <% end %><br/>
             <%= f.password_field :password, autocomplete: "off", class: 'form-control' %>
           </div>
@@ -29,12 +29,9 @@
           </div>
 
           <div class="actions">
-            <%= f.submit "Sign up", class: 'btn btn-primary' %>
+            <%= f.submit t('.sign_up'), class: 'btn btn-primary' %>
           </div>
         <% end %>
-      </div>
-      <div class="panel-footer">
-        <%= render "devise/shared/links" %>
       </div>
     </div>
   </div>
