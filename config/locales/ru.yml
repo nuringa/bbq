@@ -1,34 +1,38 @@
 ru:
   errors:
     count:
-      one: "В вашей форме %{count} ошибка"
-      few: "В вашей форме %{count} ошибки"
-      many: "В вашей форме %{count} ошибок"
+      one: В вашей форме %{count} ошибка
+      few: В вашей форме %{count} ошибки
+      many: В вашей форме %{count} ошибок
   activerecord:
     models:
-      user: 'Пользователь'
-      event: 'Событие'
+      user: Пользователь
+      event: Событие
     attributes:
       user:
-        email: 'Email'
-        name: 'Имя'
-        password: 'Пароль'
-        password_confirmation: 'Подтверждение пароля'
+        email: Email
+        name: Имя
+        password: Пароль
+        password_confirmation: Подтверждение пароля
       event:
-        title: 'Название'
-        address: 'Место проведения'
-        datetime: 'Дата и время'
-        description: 'Описание'
+        title: Название
+        address: Место проведения
+        datetime: Дата и время
+        description: Описание
   controllers:
     events:
-      created: 'Вы создали новое мероприятие'
-      updated: 'Вы обновили мероприятие'
-      destroyed: 'Вы удалили мероприятие :('
+      created: Вы создали новое мероприятие
+      updated: Вы обновили мероприятие
+      destroyed: Вы удалили мероприятие
     users:
-      updated: 'Вы обновили свой профиль'
+      updated: Вы обновили свой профиль
+    comments:
+      destroyed: Комментарий удален
+      created: Ваш комментарий добавлен
+      error: Ошибка с комментариями
   app:
-    name: 'Шашлыки'
-    company: 'Интенсивный курс ROR от Хороший программист'
+    name: Шашлыки
+    company: Интенсивный курс ROR от Хороший программист
   users:
     edit_title: Редактирование профиля пользователя
   events:
@@ -36,8 +40,8 @@ ru:
       title: События
       create_event: Создать событие
     new:
-      create: 'Создание События'
-    edit: 'Редактирование События'
+      create: Создание События
+    edit: Редактирование События
     show:
       edit: Изменить
       delete: Удалить
