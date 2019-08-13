@@ -30,6 +30,10 @@ ru:
       destroyed: Комментарий удален
       created: Ваш комментарий добавлен
       error: Ошибка с комментариями
+    subscriptions:
+      created: Вы подписаны на это событие
+      destroyed: Участник отписан
+      error: Подписка/отписка не сработала
   app:
     name: Шашлыки
     company: Интенсивный курс ROR от Хороший программист
@@ -48,5 +52,8 @@ ru:
       confirm_delete: Вы уверены, что хотите удалить событие?
     form:
       save_event: Сохранить
+  comments:
+    comment:
+    destroy_confirm: 'Вы уверены, что хотите удалить этот комментарий?'
   links:
     back: Назад
