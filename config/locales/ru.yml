@@ -55,5 +55,8 @@ ru:
   comments:
     comment:
     destroy_confirm: 'Вы уверены, что хотите удалить этот комментарий?'
+  subscriptions:
+    subscription:
+      destroy_confirm: 'Вы уверены, что хотите удалить эту подписку?'
   links:
     back: Назад
