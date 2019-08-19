@@ -3,14 +3,15 @@ class SubscriptionsController < ApplicationController
   before_action :set_subscription, only: [:destroy]
 
   def create
-    @new_subscription = @event.subscriptions.build(subscription_params)
-    @new_subscription.user = current_user
+    message = {notice: I18n.t('controllers.subscriptions.created')}
 
-    if @new_subscription.save
-      redirect_to @event, notice: I18n.t('controllers.subscriptions.created')
+    if current_user_can_edit?(@event)
+      message = {alert: I18n.t('controllers.subscriptions.error_self_subscribe')}
     else
-      render 'events/show', alert: I18n.t('controllers.subscriptions.error')
+      @new_subscription = @event.subscriptions.build(subscription_params)
+      @new_subscription.user = current_user
     end
+    redirect_to @event, message
   end
 
   def destroy

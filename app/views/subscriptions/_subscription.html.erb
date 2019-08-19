@@ -5,9 +5,6 @@
     <em><%= subscription.user_name %></em>
   <% end %>
   <% if current_user_can_edit?(subscription) %>
-    <%= link_to fa_icon('trash-o'), root_path,
-                method: :delete %>
-    <%= fa_icon('times')%>
     <%= link_to(
             fa_icon('times'),
             event_subscription_path(subscription.event, subscription),
