@@ -4,11 +4,13 @@ ru:
       one: В вашей форме %{count} ошибка
       few: В вашей форме %{count} ошибки
       many: В вашей форме %{count} ошибок
+    user_email: уже занят зарегистрированным пользователем
   activerecord:
     models:
       user: Пользователь
       event: Событие
       comment: Комментарий
+      subscription: Подписка
     attributes:
       user:
         email: Email
@@ -22,6 +24,9 @@ ru:
         description: Описание
       comment:
         body: Текст комментария
+      subscription:
+        user_name: Имя
+        user_email: Email
   controllers:
     events:
       created: Вы создали новое мероприятие
