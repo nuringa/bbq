@@ -11,7 +11,12 @@ class SubscriptionsController < ApplicationController
       @new_subscription = @event.subscriptions.build(subscription_params)
       @new_subscription.user = current_user
     end
-    redirect_to @event, message
+
+    if @new_subscription.save
+      redirect_to @event, message
+    else
+      render 'events/show', message
+    end
   end
 
   def destroy
