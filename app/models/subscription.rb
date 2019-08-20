@@ -11,15 +11,11 @@ class Subscription < ApplicationRecord
 
   validates :user_email, uniqueness: { scope: :event_id }, unless: -> { user.present? }
 
-  validate :user_email_must_be_unique, :on => :create, unless: -> { user.present? }
-  validate :user_must_not_be_author, :on => :create, if: -> { user.present? }
+  validate :user_email_must_be_unique, on: :create, unless: -> { user.present? }
+  validate :user_must_not_be_author, on: :create, if: -> { user.present? }
 
   def user_must_not_be_author
     errors.add(:user_id, I18n.t('errors.self_subscribe')) if user == event.user
-  end
-
-  def user_email_must_be_unique
-    errors.add(:user_email, I18n.t('errors.user_email')) if email_already_exists?
   end
 
   def user_name
@@ -39,7 +35,7 @@ class Subscription < ApplicationRecord
   end
 
   private
-  def email_already_exists?
-    User.all.where(email: user_email).any?
+  def user_email_must_be_unique
+    errors.add(:user_email, I18n.t('errors.user_email')) if User.all.where(email: user_email).any?
   end
 end
