@@ -15,7 +15,7 @@ class Subscription < ApplicationRecord
   validate :user_must_not_be_author, :on => :create, if: -> { user.present? }
 
   def user_must_not_be_author
-    errors.add(:user_id, I18n.t('errors.self_subscribe')) if user.name == event.user.name
+    errors.add(:user_id, I18n.t('errors.self_subscribe')) if user.email == event.user.email
   end
 
   def user_email_must_be_unique
