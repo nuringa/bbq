@@ -12,12 +12,14 @@ ru:
       event: Событие
       comment: Комментарий
       subscription: Подписка
+      photo: Фото
     attributes:
       user:
         email: Email
         name: Имя
         password: Пароль
         password_confirmation: Подтверждение пароля
+        avatar: Аватарка
       event:
         title: Название
         address: Место проведения
@@ -28,6 +30,8 @@ ru:
       subscription:
         user_name: Имя
         user_email: Email
+      photo:
+        photo: Фотография
   controllers:
     events:
       created: Вы создали новое мероприятие
@@ -43,6 +47,10 @@ ru:
       created: Вы подписаны на это событие
       destroyed: Участник отписан
       error: Подписка/отписка не сработала
+    photos:
+      error: Что-то не так с фоткой
+      created: Вы добавили фотографию к событию
+      destroyed: Вы удалили фотку
   app:
     name: Шашлыки
     company: Интенсивный курс ROR от Хороший программист

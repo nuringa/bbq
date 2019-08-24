@@ -11,8 +11,17 @@ class User < ApplicationRecord
 
   before_validation :set_name, on: :create
 
+  # TODO найти этот код в виду - пока выдает ошибку если включить
+  # after_commit :link_subscriptions, on: create
+
+  mount_uploader :avatar, AvatarUploader
+
   private
   def set_name
     self.name = "Somebody #{rand(111)}" if self.name.blank?
   end
+
+  # def link_subscriptions
+  #   Subscription.where(user_id: nil, user_email: self.email).update_all(user_id: self.id)
+  # end
 end
