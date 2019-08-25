@@ -12,6 +12,7 @@ gem 'rails-i18n'
 
 gem 'carrierwave'
 gem 'rmagick'
+gem 'fog-aws'
 
 
 gem 'puma', '~> 3.11'

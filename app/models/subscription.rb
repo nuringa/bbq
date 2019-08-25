@@ -1,7 +1,6 @@
 class Subscription < ApplicationRecord
   belongs_to :event
   belongs_to :user, optional: true
-  has_many :subscribers, through: :subscriptions, source: :user
 
   validates :user_name, presence: true, unless: -> { user.present? }
   validates :user_email, presence: true,
