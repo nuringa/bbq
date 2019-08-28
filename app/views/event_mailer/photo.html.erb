@@ -1,8 +1,10 @@
 <h1><%= t '.title' %></h1>
 
-<p><%= t '.author' %>: <strong><%= @photo.user.name %></strong></p>
+<%= image_tag(@photo.photo.url) %>
 
-<div><%= image_tag image_url(@photo.photo.url) %></div>
+<hr/>
+
+<p><%= t '.author' %>: <strong><%= @photo.user.name %></strong></p>
 
 <p><%= t '.event' %></p>
 <h3><%= @event.title %></h3>

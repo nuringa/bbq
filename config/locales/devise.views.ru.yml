@@ -34,6 +34,7 @@ ru:
         change_your_password: Изменить пароль
         confirm_new_password: Повторите новый пароль
         new_password: Новый пароль
+        password_length: (Минимальная длина пароля %{password_length} символов)
       new:
         forgot_your_password: Забыли пароль?
         send_me_reset_password_instructions: Выслать новый пароль
