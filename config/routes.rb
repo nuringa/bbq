@@ -8,4 +8,8 @@ Rails.application.routes.draw do
     resources :photos, only: [:create, :destroy]
   end
   resources :users, only: [:show, :edit, :update]
+
+  if Rails.env.development?
+    mount LetterOpenerWeb::Engine, at: "/letter_opener"
+  end
 end
