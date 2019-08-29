@@ -32,6 +32,7 @@ ru:
         user_email: Email
       photo:
         photo: Фотография
+        user: Зарегистрированный пользователь
   controllers:
     events:
       created: Вы создали новое мероприятие
