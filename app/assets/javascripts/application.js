@@ -15,3 +15,4 @@
 // = require twitter/bootstrap
 //= require activestorage
 //= require_tree .
+//= require maps
