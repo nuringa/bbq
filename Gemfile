@@ -9,9 +9,8 @@ gem 'sprockets-rails'
 gem 'devise'
 gem 'devise-i18n'
 gem 'rails-i18n'
-
 gem 'carrierwave'
-gem 'rmagick'
+
 gem 'fog-aws'
 
 
@@ -34,9 +33,11 @@ group :development do
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
   gem 'letter_opener_web'
+  gem 'rmagick'
 end
 
 group :production do
+  gem 'passenger'
   gem 'pg'
 end
 
