@@ -39,7 +39,7 @@
         </div>
       </div>
 
-      <div class="event-photo-form">
+      <div class="event-photo-form buffer-both">
         <% if current_user %>
           <%= render partial: 'photos/form', locals: {photo: @new_photo || @event.photos.build} %>
         <% end %>

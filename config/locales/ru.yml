@@ -78,6 +78,8 @@ ru:
   subscriptions:
     subscription:
       destroy_confirm: Вы уверены, что хотите удалить эту подписку?
+  alert_destroy:
+    photo: Вы уверены, что хотите удалить фото?
   event_mailer:
     comment:
       title: Новый комментарий

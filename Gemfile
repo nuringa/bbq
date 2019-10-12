@@ -17,6 +17,7 @@ gem 'fog-aws'
 
 gem 'sqlite3', '< 1.4'
 gem 'puma', '~> 3.11'
+gem 'lightbox-bootstrap-rails', '5.1.0.1'
 
 gem 'sass-rails', '~> 5.0'
 gem 'uglifier', '>= 1.3.0'
@@ -25,7 +26,6 @@ gem 'jbuilder', '~> 2.5'
 gem 'bootsnap', '>= 1.1.0', require: false
 
 group :development, :test do
-  # gem 'sqlite3'
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
 end
 
