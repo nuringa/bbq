@@ -13,7 +13,7 @@
 //= require jquery
 //= require rails-ujs
 // = require twitter/bootstrap
-//= require lightbox-bootstrap
 //= require map
+// = require lightbox-bootstrap
 // = require activestorage
 //= require_tree .
