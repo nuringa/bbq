@@ -15,7 +15,6 @@ gem 'carrierwave'
 gem 'rmagick'
 gem 'fog-aws'
 
-gem 'sqlite3', '< 1.4'
 gem 'puma', '~> 3.11'
 gem 'lightbox-bootstrap-rails', '5.1.0.1'
 
