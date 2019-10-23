@@ -60,15 +60,6 @@ Rails.application.configure do
   config.file_watcher = ActiveSupport::EventedFileUpdateChecker
 
   config.action_mailer.delivery_method = :letter_opener_web
-  # config.action_mailer.delivery_method = :smtp
-  # config.action_mailer.smtp_settings = {
-  #     address: 'smtp.gmail.com',
-  #     port: '587',
-  #     user_name: 'nuringa17@gmail.com',
-  #     password: 'Pochta888#',
-  #     authentication: 'plain',
-  #     enable_starttls_auto: true
-  # }
 
   config.action_mailer.default_url_options = { :host => 'localhost:3000' }
 end
