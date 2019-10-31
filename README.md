@@ -1,4 +1,4 @@
-##BBQ
+## BBQ
 
 An application to invite friends to events
 You can create events, subscribe to events, write comments, add photos.
