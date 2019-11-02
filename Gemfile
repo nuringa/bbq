@@ -19,6 +19,7 @@ gem 'sqlite3', '< 1.4'
 gem 'puma', '~> 3.11'
 gem 'lightbox-bootstrap-rails', '5.1.0.1'
 gem 'pundit', '~> 2.0', '>= 2.0.1'
+gem 'resque', '~> 2.0'
 
 gem 'sass-rails', '~> 5.0'
 gem 'uglifier', '>= 1.3.0'

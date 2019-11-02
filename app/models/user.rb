@@ -16,6 +16,10 @@ class User < ApplicationRecord
 
   mount_uploader :avatar, AvatarUploader
 
+  def send_devise_notification(notification, *args)
+    devise_mailer.send(notification, self, *args).deliver_later
+  end
+
   private
   def set_name
     self.name = "Friend #{rand(111)}" if self.name.blank?
