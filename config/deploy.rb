@@ -1,7 +1,7 @@
 # config valid for current version and patch releases of Capistrano
 lock "~> 3.11.2"
 
-set :application, "bbq-nuringa.site"
+set :application, "bbq"
 set :repo_url, "git@github.com:nuringa/bbq.git"
 
 # Default branch is :master
@@ -25,6 +25,8 @@ append :linked_files, "config/database.yml", "config/master.key"
 
 # Default value for linked_dirs is []
 append :linked_dirs, "log", "tmp/pids", "tmp/cache", "tmp/sockets", "vendor/bundle", "public/system", "public/uploads"
+
+after 'deploy:restart', 'resque:restart'
 
 # Default value for default_env is {}
 # set :default_env, { path: "/opt/ruby/bin:$PATH" }

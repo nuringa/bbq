@@ -42,6 +42,7 @@ group :development do
   gem 'capistrano-passenger', require: false
   gem 'capistrano-rbenv', require: false
   gem 'capistrano-bundler', require: false
+  gem 'capistrano-resque', require: false
 end
 
 group :production do
