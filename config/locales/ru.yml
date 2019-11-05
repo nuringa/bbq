@@ -57,6 +57,8 @@ ru:
   app:
     name: Шашлыки
     company: Интенсивный курс ROR от Хороший программист
+    policy: Политика конфиденциальности
+    policy_path: http://bbq-nuringa.site/policy
   users:
     edit_title: Редактирование профиля пользователя
   events:
