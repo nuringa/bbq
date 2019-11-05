@@ -21,6 +21,9 @@ gem 'lightbox-bootstrap-rails', '5.1.0.1'
 gem 'pundit', '~> 2.0', '>= 2.0.1'
 gem 'resque', '~> 2.0'
 
+gem 'omniauth'
+gem 'omniauth-facebook'
+
 gem 'sass-rails', '~> 5.0'
 gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.2'
