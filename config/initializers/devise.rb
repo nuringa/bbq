@@ -261,7 +261,15 @@ Devise.setup do |config|
   # up on your models and hooks.
   config.omniauth :facebook, Rails.application.credentials[:omniauth_facebook_id],
                   Rails.application.credentials[:omniauth_facebook_secret]
-
+  config.omniauth :vkontakte, Rails.application.credentials[:omniauth_vk_id],
+                  Rails.application.credentials[:omniauth_vk_secret],
+                  {
+                      :scope => 'email',
+                      :display => 'popup',
+                      :lang => 'en',
+                      :https => 1,
+                      :image_size => 'original'
+                  }
   # ==> Warden configuration
   # If you want to use other strategies, that are not supported by Devise, or
   # change the failure app, you can configure them inside the config.warden block.
