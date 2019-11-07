@@ -11,7 +11,7 @@ class User < ApplicationRecord
   validates :email, presence: true, length: {maximum: 255}
   validates :email, uniqueness: true
 
-  # before_validation :set_name, on: :create
+  before_validation :set_name, on: :create
 
   after_commit :link_subscriptions, on: :create
 

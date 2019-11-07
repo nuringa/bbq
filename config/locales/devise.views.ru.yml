@@ -68,6 +68,7 @@ ru:
         forgot_your_password: Забыли пароль?
         sign_in: Войти
         sign_up: Регистрация
+        sign_in_through: Залогиниться через %{social_media}
   errors:
     messages:
       expired: устарела. Пожалуйста, запросите новую
