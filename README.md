@@ -5,8 +5,7 @@ You can create events, subscribe to events, write comments, add photos.
 
     Ruby version 2.6.3
     Rails version 5.2.3
-    Deploy on Heroku - https://bbqringa.herokuapp.com/
-    
+   
 
 * Authentication with gem pundit
 * Uploading photo with gems carrierwave, rmagick. 
