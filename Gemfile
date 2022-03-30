@@ -16,7 +16,7 @@ gem 'rmagick'
 gem 'fog-aws'
 
 gem 'sqlite3', '< 1.4'
-gem 'puma', '~> 3.11'
+gem 'puma', '~> 4.3'
 gem 'lightbox-bootstrap-rails', '5.1.0.1'
 gem 'pundit', '~> 2.0', '>= 2.0.1'
 gem 'resque', '~> 2.0'
